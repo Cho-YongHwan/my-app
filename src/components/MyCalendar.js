@@ -15,8 +15,8 @@ const MyCalendar = () => {
 
   const fetchHolidayData = async () => {
     try {
-      const apiKey =
-        "9GPu5e9rfCEPcDjNcOv81mqWRcmz15cEogxDynUqnxDDEQLBtvw4w5izyS4lQ9A6R8R5VjcF5twWNuSk9Md0VQ%3D%3D"; // 발급받은 API 키
+      const apiKey = "";
+
       const apiUrl = `http://apis.data.go.kr/B090041/openapi/service/SpcdeInfoService/getRestDeInfo?solYear=2024&ServiceKey=${apiKey}&_type=json`;
 
       const response = await axios.get(apiUrl);
